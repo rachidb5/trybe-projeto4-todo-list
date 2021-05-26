@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>Roberto Bastos | To Do List</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>Minha Lista de Tarefas</header>
+
+        <div id="subtitulo">
+            <div class="d-flex justify-content-center">
+                <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="container-edit">
+                <div class="input-group mb-3 div-input ">
+                    <input type="text" class="form-control" placeholder="Adicione uma nova tarefa" aria-label="Adicione uma nova tarefa" aria-describedby="button-addon2" id="texto-tarefa" >
+                    <div class="input-group-append">
+                        <button class="btn btn-warning" type="button" id="criar-tarefa">Botão</button>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-danger" id="apaga-tudo">
+                        <span>Apagar Todos</span>
+                    </button>
+                    <button class="btn btn-primary" id="remover-finalizados">
+                        <span>Apagar Terminados</span>
+                    </button>
+                    <button class="btn btn-secondary" id="remover-selecionado">
+                        <span>Apagar Selecionados</span>
+                    </button>
+                    <button class="btn btn-warning" id="mover-cima">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                    <button class="btn btn-warning" id="mover-baixo">
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                    <button class="btn btn-success" id="salvar-tarefas">
+                        <span>Salvar Lista</span>
+                    </button>
+                </div>
+            </div>
+            <div class="container-lista">
+                <ol id="lista-tarefas">
+                </ol>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
